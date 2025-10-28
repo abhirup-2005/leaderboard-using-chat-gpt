@@ -1,0 +1,115 @@
+/* --- BASIC LAYOUT --- */
+body {
+    background: radial-gradient(circle at top, #111 0%, #000 100%);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* --- LEADERBOARD BOX --- */
+#leaderboard {
+    margin: 0 auto;
+    width: 360px;
+    background: rgba(25, 25, 25, 0.9);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease;
+}
+
+.entry:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.entry:last-child {
+    border-bottom: none;
+}
+
+.rank {
+    width: 30px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.name {
+    flex: 1;
+    text-align: left;
+}
+
+.score {
+    font-weight: 600;
+}
+
+/* --- TOP 3 COLORS --- */
+.top1 .rank,
+.top1 .name,
+.top1 .score {
+    color: gold;
+}
+
+.top2 .rank,
+.top2 .name,
+.top2 .score {
+    color: silver;
+}
+
+.top3 .rank,
+.top3 .name,
+.top3 .score {
+    color: #cd7f32;
+}
+
+/* --- FOOTER --- */
+#footer {
+    margin-top: 20px;
+}
+
+#lastUpdated {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+/* --- REFRESH ANIMATION --- */
+.spin {
+    animation: spin 0.8s linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.time {
+  font-size: 0.8rem;
+  color: #bbb;
+  margin-left: 10px;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 40px 1fr 60px auto;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
