@@ -129,3 +129,9 @@ async function fetchLeaderboard() {
 
 fetchLeaderboard();
 setInterval(fetchLeaderboard, 30000);
+
+// Display current month and year
+const monthDisplay = document.getElementById("monthDisplay");
+const now = new Date();
+const options = { month: 'long', year: 'numeric' };
+monthDisplay.textContent = now.toLocaleDateString('en-US', options);
