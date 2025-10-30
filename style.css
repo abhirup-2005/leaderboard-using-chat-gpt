@@ -238,24 +238,24 @@ h1 {
     }
 
     #logo-img {
-        width: 50px;
+        width: 40px;
     }
 
     #logo-txt {
-        font-size: 1.1rem;
-        width: 98px;
+        font-size: 1rem;
+        width: 85px;
         align-self: flex-end;
         text-align: left;
     }
 
     #links {
         display: flex;
-        gap: 16px;
+        gap: 10px;
         list-style: none;
     }
 
     .social {
-        width: 27px;
-        border-radius: 9px;
+        width: 24px;
+        border-radius: 8px;
     }
 }
