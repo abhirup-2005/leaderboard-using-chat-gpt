@@ -1,5 +1,5 @@
 const SHEET_URL =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vTedDp9Y9WX_c52fJKprBgrenuE6fbKZ8Cr9qUveKKrE-2XMAHO6vt2UWqv3HBvigK8Lm_IJQCBNqn_/pub?output=csv";
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vREoOJcRvBQYqDlGB236JdFGax7LNag1b_GaHyMwzFxUC2BTa8C6xdc7S_SH4UvTyuzimjsYAJBg1K7/pub?output=csv";
 
 const leaderboard = document.getElementById("leaderboard");
 const lastUpdatedEl = document.getElementById("lastUpdated");
