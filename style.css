@@ -97,8 +97,6 @@ h1 {
     margin-bottom: 60px;
     /* adjust if footer height changes */
     padding: 0 20px;
-
-    perspective: 1000px;
 }
 
 /* ================================================================
@@ -111,10 +109,6 @@ h1 {
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
-
-    transform-style: preserve-3d;
-    transition: transform 0.1s ease;
-    will-change: transform;
 }
 
 .entry {
