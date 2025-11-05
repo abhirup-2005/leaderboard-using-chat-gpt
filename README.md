@@ -1,4 +1,4 @@
-# 🏆 Leaderboard using ChatGPT
+# 🏆 Leaderboard
 
 A lightweight, real-time leaderboard built using **HTML, CSS, and JavaScript**, with data sourced directly from a **Google Sheet (CSV export)**.  
 It automatically fetches and updates rankings every 30 seconds without requiring any backend or database.
