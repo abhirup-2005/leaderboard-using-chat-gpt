@@ -127,6 +127,36 @@ async function fetchLeaderboard() {
   }
 }
 
+function initTiltEffect() {
+    const card = document.getElementById('leaderboard');
+    const maxTilt = 10; // Maximum tilt angle in degrees
+
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        // Calculate tilt angles based on mouse position
+        const xRatio = (x / rect.width - 0.5) * 2; // -1 to 1
+        const yRatio = (y / rect.height - 0.5) * 2; // -1 to 1
+        
+        // Invert the angles for natural tilting effect
+        const tiltX = -yRatio * maxTilt;
+        const tiltY = xRatio * maxTilt;
+
+        // Apply the transform
+        card.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+    });
+
+    // Reset transform when mouse leaves
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'rotateX(0deg) rotateY(0deg)';
+    });
+}
+
+// Call this function after the leaderboard content is loaded
+document.addEventListener('DOMContentLoaded', initTiltEffect);
+
 fetchLeaderboard();
 setInterval(fetchLeaderboard, 30000);
 
